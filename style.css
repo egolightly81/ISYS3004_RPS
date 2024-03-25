@@ -12,10 +12,12 @@ body {
     text-align: left;
 }
 
-/* Circle CSS from following */
+/* Circle CSS from following site: https://www.w3schools.com/howto/howto_css_circles.asp 
+ */
 .circle {
     height: 25px;
     width: 25px;
+    color: white;
     background-color: red; /* Corrected the syntax error here */
     border-radius: 50%;
     font: black;
