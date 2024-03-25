@@ -1,5 +1,5 @@
 /*Lets keep score! */ 
-let win = 0; 
+let wins = 0; 
 let lose =0; 
 let draw =0;
 
