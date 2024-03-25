@@ -18,6 +18,7 @@ body {
     width: 25px;
     background-color: red; /* Corrected the syntax error here */
     border-radius: 50%;
+    font: black;
     display: inline-block;
 }
 
