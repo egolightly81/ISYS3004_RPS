@@ -1,7 +1,9 @@
-/*Lets keep score! */ 
+/*
+Lets keep score! 
+*/ 
 let wins = 0; 
-let lose =0; 
-let draw =0;
+let loses =0; 
+let draws =0;
 
 function say(themessage){
     let msg = new SpeechSynthesisUtterance (themessage);
@@ -23,7 +25,7 @@ function play(user) {
         wins++;
     }
     if (user === 'scissors') {
-        result = "lose";
+        result = "loses";
         loses++
     }
     let mymessage("Computer chose rock, you " + result + "!" + 
