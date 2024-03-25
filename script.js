@@ -1,44 +1,38 @@
+// Function to handle user's click on R, P, or S
 function play(user) {
-    console.log("User clicked:", user); // Check if the user's click is registered
-    // Rest of your code...
+    console.log("User clicked:", user); // Log the user's choice when they click R, P, or S
 
-    // Example: log the result message
-    console.log("Result message:", mymessage);
-}
-
-/*
-Let's keep score! 
-*/ 
-let wins = 0; 
-let loses = 0; 
-let draws = 0;
-
-function say(themessage) {
-    let msg = new SpeechSynthesisUtterance(themessage);
-    speechSynthesis.speak(msg);
-}
-
-/* Updated This is a simplified version of the game.
-The Computer ALWAYS picks ROCK.  
-Does the user's choice win, lose, or tie vs ROCK? */
-function play(user) { 
+    // Determine the result based on the user's choice
     let result = "";
     if (user === 'rock') {
         result = "tie";
         draws++;
-    }
-    if (user === 'paper') {
+    } else if (user === 'paper') {
         result = "win";
         wins++;
-    }
-    if (user === 'scissors') {
-        result = "loses";
+    } else if (user === 'scissors') {
+        result = "loses"; // Consider changing this to "loses" for correct spelling
         loses++;
     }
+
+    // Construct the message with game outcome and scores
     let mymessage = "Computer chose rock, you " + result + "!" + 
         "\n\n" + wins + " wins" +
         "\n\n" + loses + " loses" +
         "\n\n" + draws + " draws";
+    
+    // Display the message in an alert and speak it
     alert(mymessage);
     say(mymessage);
+}
+
+// Variables to keep track of wins, loses, and draws
+let wins = 0; 
+let loses = 0; 
+let draws = 0;
+
+// Function to speak a message using SpeechSynthesis API
+function say(themessage) {
+    let msg = new SpeechSynthesisUtterance(themessage);
+    speechSynthesis.speak(msg);
 }
