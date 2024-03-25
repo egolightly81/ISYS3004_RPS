@@ -10,7 +10,7 @@ function say(themessage) {
     speechSynthesis.speak(msg);
 }
 
-/* This is a simplified version of the game.
+/* Updated This is a simplified version of the game.
 The Computer ALWAYS picks ROCK.  
 Does the user's choice win, lose, or tie vs ROCK? */
 function play(user) { 
