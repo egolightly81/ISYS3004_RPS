@@ -20,3 +20,7 @@ body {
     border-radius: 50%;
     display: inline-block;
 }
+
+.circle:hover {
+    background-color: gray;
+}
