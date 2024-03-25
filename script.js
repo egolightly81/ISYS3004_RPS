@@ -1,3 +1,11 @@
+function play(user) {
+    console.log("User clicked:", user); // Check if the user's click is registered
+    // Rest of your code...
+
+    // Example: log the result message
+    console.log("Result message:", mymessage);
+}
+
 /*
 Let's keep score! 
 */ 
