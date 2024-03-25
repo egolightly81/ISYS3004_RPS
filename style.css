@@ -1,4 +1,4 @@
-body { 
+body {
     margin: 0 auto;
     margin-top: 40px;
     padding: 20px;
@@ -6,6 +6,7 @@ body {
     width: 20%;
     text-align: center;
 }
+
 .instruction {
     font-size: 60%;
     text-align: left;
@@ -13,10 +14,10 @@ body {
 }
 
 /* Circle CSS from following */
-.circle{
+.circle {
     height: 25px;
     width: 25px;
-    background-color; red;
+    background-color: red; /* Corrected the syntax error here */
     border-radius: 50%;
     display: inline-block;
 }
