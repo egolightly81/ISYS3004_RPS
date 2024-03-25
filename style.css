@@ -6,3 +6,8 @@ body {
     width: 20%;
     text-align: center;
 }
+.instruction {
+    font-size: 60%;
+    text-align: left;
+
+}
