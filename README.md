@@ -6,7 +6,6 @@ Certainly! Below, I've created a basic **README.md** file for a Rock Paper Sciss
 
 # Rock, Paper, Scissors Game
 
-![Screenshot](https://user-images.githubusercontent.com/47572512/152343729-516a0681-8eaa-4e3e-916b-1c53fd026c29.png)
 
 ## What is this website about?
 
