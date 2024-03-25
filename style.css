@@ -17,12 +17,10 @@ Circle CSS from following site: https://www.w3schools.com/howto/howto_css_circle
  */
 
  .circle {
+    background-color: red;
     color: white;
-    background-color: red; /* Corrected the syntax error here */
-    border-radius: 50%;
-    font: black;
-    display: inline-block;
     padding: 5px 20px;
+    border-radius: 50%;
     font-size: 65%;
 }
 
