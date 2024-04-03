@@ -2,9 +2,6 @@
 /* trouble shooting with Chat GPT - Reference accessed 25/03/24 - concersation downloaded as reference for portfolio 
 */
 
-// Function to handle user's click on R, P, or S
-function play(user) {
-    console.log("User clicked:", user); // Log the user's choice when they click R, P, or S
 
     // Determine the result based on the user's choice
     let result = "";
