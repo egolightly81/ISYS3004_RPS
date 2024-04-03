@@ -1,6 +1,6 @@
 
 /* trouble shooting with Chat GPT - Reference accessed 25/03/24 - concersation downloaded as reference for portfolio 
-*/
+Removed console.log handler */
 
 
     // Determine the result based on the user's choice
