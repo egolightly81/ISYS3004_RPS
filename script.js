@@ -1,9 +1,8 @@
+let wins = 0; 
+let loses = 0; 
+let draws = 0;
 
-/* trouble shooting with Chat GPT - Reference accessed 25/03/24 - concersation downloaded as reference for portfolio 
-Removed console.log handler */
-
-
-    // Determine the result based on the user's choice
+function play(user) {
     let result = "";
     if (user === 'rock') {
         result = "tie";
@@ -16,24 +15,28 @@ Removed console.log handler */
         loses++;
     }
 
-    // Construct the message with game outcome and scores
     let mymessage = "Computer chose rock, you " + result + "!" + 
         "\n\n" + wins + " wins" +
         "\n\n" + loses + " loses" +
         "\n\n" + draws + " draws";
     
-    // Display the message in an alert and speak it
     alert(mymessage);
     say(mymessage);
 }
 
-// Variables to keep track of wins, loses, and draws
-let wins = 0; 
-let loses = 0; 
-let draws = 0;
-
-// Function to speak a message using SpeechSynthesis API
 function say(themessage) {
     let msg = new SpeechSynthesisUtterance(themessage);
     speechSynthesis.speak(msg);
 }
+
+document.getElementById('rock').addEventListener('click', function() {
+    play('rock');
+});
+
+document.getElementById('paper').addEventListener('click', function() {
+    play('paper');
+});
+
+document.getElementById('scissors').addEventListener('click', function() {
+    play('scissors');
+});
